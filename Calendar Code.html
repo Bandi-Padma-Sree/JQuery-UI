@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="jquery-ui\jquery-ui.css">
+  <link rel="stylesheet" href="jquery-ui\jquery-ui.structure.css">
+  <link rel="stylesheet" href="jquery-ui\jquery-ui.theme.css">
+</head>
+<body>
+
+  Enter your Date Of Birth : <input type="text" name="" id="id1">
+</body>
+<script src="jquery-ui\external\jquery\jquery.js" charset="utf-8"></script>
+<script src="jquery-ui\jquery-ui.js" charset="utf-8"></script>
+<script>
+  var today = new Date();
+  $('#id1').datepicker({
+    numberOfMonths:1,
+    showOtherMonths:true,
+    changeYear:true,
+    changeMonth:true,
+    showWeek:true,
+    /*new Date()
+    new Date(year, month, day, hours, minutes, seconds, milliseconds)
+    new Date(milliseconds)
+    new Date(date string)*/
+    minDate:new Date(1997,0,1),
+    maxDate:new Date(2020,9,today.getDate())
+  })
+</script>
+</html>

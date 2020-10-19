@@ -1,0 +1,42 @@
+header{
+  background-color: white;
+  height: 100px;
+}
+div{
+  background-color: #ff8702;
+}
+a{
+  padding-right: 30px;
+  color: #ff8702;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: Arial;
+}
+.div1{
+  height: 5px;
+}
+.div2{
+  height:40px;
+  color:white;
+}
+.div3{
+  height: 600px;
+  background: white;
+}
+.div4{
+  width:500px;
+  float:left;
+  color:white;
+  height : 540px;
+}
+.list1{
+  font-size: 20px;
+}
+.branches{
+  width:8cm;
+  height: 8cm;
+  border-radius: 25%;
+}
+.list2{
+  font-size: 20px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="jquery-ui\jquery-ui.css">
+  <link rel="stylesheet" href="jquery-ui\jquery-ui.structure.css">
+  <link rel="stylesheet" href="jquery-ui\jquery-ui.theme.css">
+  <link rel="stylesheet" href="jquery-ui\theme.css">
+
+</head>
+<body>
+  Trip Start Date:
+  <input type="text" name="" id="id1" placeholder="Pick Date">
+  <div id="maindiv">
+  <ul>
+    <li><a href="#cseinfo">CSE</a></li>
+    <li><a href="#eceinfo">ECE</a></li>
+    <li><a href="#eeeinfo">EEE</a></li>
+
+  </ul>
+
+
+
+    <div id="cseinfo">
+      <center><h1>CSE Deparrtment</h1></center>
+      <p> Its fields can be divided into theoretical and practical disciplines. For example, computational complexity theory describes the amount of resources required to solve computational problems, while computer graphics and computational geometry emphasizes more specific applications. Algorithmics have been called the heart of computer science.[8] Programming language theory considers approaches to the description of computational processes, while software engineering involves the use of programming languages and complex systems. Computer architecture and computer engineering deals with construction of computer components and computer-controlled equipment.[5][9] Human–computer interaction considers the challenges in making computers useful, usable, and accessible. Artificial intelligence aims to synthesize goal-orientated processes such as problem-solving, decision-making, environmental adaptation, motion planning, learning, and communication found in humans and animals. According to Peter Denning, the fundamental question underlying computer science is, "What can be automate
+    </p>
+    </div>
+
+
+    <div id="eceinfo">
+      <p>
+        <center><h1>ECE Deparrtment</h1></center>
+        one of the many notes she included, an algorithm to compute the Bernoulli numbers, which is considered to be the first published algorithm ever specifically tailored for implementation on a computer.[17] Around 1885, Herman Hollerith invented the tabulator, which used punched cards to process statistical information; eventually his company became part of IBM. Following Babbage, although unaware of his earlier work, Percy Ludgate in 1909 published [18] the 2nd of the only two designs for mechanical analytical engines in history. In 1937, one hundred years after Babbage's impossible dream, Howard Aiken convinced IBM, which was making all kinds of punched card equipment and was also in the calculator business[19] to develop his giant programmable calculator, the ASCC/Harvard Mark I, based on Babbage's Analytical Engine, which itself used cards and a central computing unit. When the machine was finished, some hailed it as "Babbage's dream come true".[20]
+      </p>
+    </div>
+
+
+      <div id="eeeinfo">
+        <center><h1>EEE Deparrtment</h1></center>
+        <p>
+          Although many initially believed it was impossible that computers themselves could actually be a scientific field of study, in the late fifties it gradually became accepted among the greater academic population.[26][27] It is the now well-known IBM brand that formed part of the computer science revolution during this time. IBM (short for International Business Machines) released the IBM 704[28] and later the IBM 709[29] computers, which were widely used during the exploration period of such devices. "Still, working with the IBM [computer] was frustrating […] if you had misplaced as much as one letter in one instruction, the program would crash, and you would have to start the whole process over again".[26] During the late 1950s, the computer science discipline was very much in its developmental stages, and such issues were commonplace.[27]
+
+        </p>
+      </div>
+
+    </div>
+
+
+    <div id="mydiv22">
+
+  <h2>Computer Science and Enginnering</h2>
+  <p>Focuses on the design, operation, control, and optimization of chemical processes. These include natural and man-made materials, the interaction of materials with machines, safety and health, energy conservation, and waste and pollution control. This extends to plant design and layout, machine and wet process design and improvement and designing and creating products.</p>
+
+
+  <h2>Electrical and Electronics Engineering</h2>
+  <p>An engineering discipline that involves the science, technology, and practice of extracting and processing minerals from a naturally occurring environment. Mining engineering is closely related to many other disciplines like mineral processing and metallurgy, geotechnical engineering and surveying. A mining engineer manages all phases of mining operations – from exploration and discovery of the mineral resource, through feasibility studies, mine design, development of plans, production, and operations, to mine closure.
+With the process of mineral extraction, some amount of waste material and other byproducts are generated which are the primary source of pollution in the vicinity of mines. Mining activities by their nature cause a disturbance of the natural environment in and around which the minerals are located. Mining engineers must, therefore, be concerned not only with the production and processing of mineral commodities but also with the mitigation of damage to the environment both during and after mining as a result of the change in the mining area.</p>
+
+<h2>Electrical and Communication Engineering</h2>
+<p>The creation of physical devices and abstract methods that make it possible to conduct electricity, magnetism and light, through low power electrical circuits deemed electronic circuits as well as through communication channels, in such a manner so as to make it possible to control, that is to actuate, on other external entities that can be mechanical, electrical, chemical and even biological in nature, even to the point of automation and thus achieving a manipulation over those natural phenomena so as to concede to them a specific form so that they abstractly represent something, in a processing action that is called program and therefore they become abstract signals of information, which can be subject of further processing and even end-user presentation in what is known as computing.</p>
+
+
+<h2>Mechanical Engineering</h2>
+<p>Energy efficiency, energy services, facility management, plant engineering, environmental compliance and energy production. Energy efficiency of buildings and manufacturing processes, employing advances in lighting, insulation and heating/cooling properties.
+</p>
+
+</div>
+
+
+
+
+</body>
+<script src="jquery-ui\external\jquery\jquery.js" charset="utf-8"></script>
+<script src="jquery-ui\jquery-ui.js" charset="utf-8"></script>
+<script>
+  $(function()
+      {
+        $("#id1").datepicker({
+numberOfMonths:1,
+showOtherMonths:true,
+changeYear:true,
+changeMonth:true,
+showWeek:true,
+minDate:new Date(2019,0,1),
+maxDate:new Date(2021,0,1),
+
+});
+$("#maindiv").tabs();
+
+$("#mydiv22").accordion({
+  collapsible:true,
+  active:8,
+  //event:"mouseover",
+  animate:500,
+  heightStyle:true,
+  icons:{header:"ui-icon-plusthick",activeHeader:"ui-icon-minusthick"}
+
+});
+        });
+
+
+
+
+
+</script>
+
+
+</html>
